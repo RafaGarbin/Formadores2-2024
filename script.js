@@ -21,4 +21,5 @@ const perguntas =[
         ]
     },
 ];
-caixaPerguntas.textContent = "Eu consigo voarrrrr"
+
+    caixaPerguntas.textContent = pergunta[0].enunciado;
