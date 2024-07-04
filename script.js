@@ -4,6 +4,7 @@ const caixaAlternativas= document.querySelector(".caixa-alternativas");
 const caixaResultado= document.querySelector(".caixa-resultado");
 const textoResultado= document.querySelector(".texto-resultado");
 
+
 const perguntas =[
     {
         enunciado:"Um vírus está deixando muitos doentes e a organização de saude indica que para minimizar o contágio seja necessário diminuir o contato entre as pessoas. O que você faz ao ouvir estas recomendaçãoes?"
