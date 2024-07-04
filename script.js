@@ -20,3 +20,4 @@ const perguntas =[
         ]
     }
 ];
+caixaPerguntas.textContent = "Eu consigo voarrrrr"
