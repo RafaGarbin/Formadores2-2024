@@ -7,7 +7,7 @@ const textoResultado= document.querySelector(".texto-resultado");
 
 const perguntas =[
     {
-        enunciado:"Um vírus está deixando muitos doentes e a organização de saude indica que para minimizar o contágio seja necessário diminuir o contato entre as pessoas. O que você faz ao ouvir estas recomendaçãoes?"
+        enunciado:"Um vírus está deixando muitos doentes e a organização de saude indica que para minimizar o contágio seja necessário diminuir o contato entre as pessoas. O que você faz ao ouvir estas recomendaçãoes?",
         alternativas:[
             " Evito ao máximo contato com pessoas, me restringindo ao contato somente com os familiares que moram em minha casa.",
             " Acredito que isso não é nada sério afinal não tem nada comprovado e me reuno com diversas pessoas em local público"
