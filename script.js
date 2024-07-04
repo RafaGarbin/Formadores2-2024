@@ -22,4 +22,4 @@ const perguntas =[
     },
 ];
 
-    caixaPerguntas.textContent = pergunta[0].enunciado;
+    caixaPerguntas.textContent = perguntas[0].enunciado;
