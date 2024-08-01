@@ -20,9 +20,17 @@ const perguntas =[
             "Continuaria me reunindo sem preocupações pois só estou com pessoas que confio e conheço."
         ]
     },
+    {
+        enunciado: "O vírus já matou muitas pessoas e os cientistas após pesquisas desenvolveram uma vacina para protejer as pessoas do vírus e assim diminuir o numero de mortes causadas por eles. Neste caso o que você faria?",
+        alternativas: [
+            "Iria me vacinar e divulgaria para que todos meus conhecidos também buscassem a vacina.", 
+            "Teria medo e não me vacinaria, tambem iria aconcelhar meus conhecidos a não vacinar pois acredito que a vacina é mais perigosa do que o vírus."
+        ]
+    },
 ];
 let atual=0;
 let perguntaAtual;
+
 function mostraPergunta(){
     perguntaAtual=perguntas[atual];
     caixaPerguntas.textContent = perguntas[atual].enunciado;
