@@ -55,9 +55,14 @@ let perguntaAtual;
 let historiaFinal="";
 
 function mostraPergunta(){
+    if(atual>=perguntas.length){
+        mostraResultado();
+        return
+    }
     perguntaAtual = perguntas[atual];
     caixaPerguntas.textContent = perguntas[atual].enunciado;
     caixaAlternativas.textContent = "";
+    yextoResultado.textContent="";
     mostraAlternativas();
 }
 
@@ -73,7 +78,12 @@ function mostraAlternativas(){
 function respostaSelecionada (opcaoSelecionada){
     const afirmacao=opcaoSelecionada.afirmacao;
     historiaFinal=afirmacao;
+    historiaFinal+=afirmacao+"";
     atual++;
     mostraPergunta();
 }
+function mostraResultado(){
+    caixaPerguntas.textContent=" Como foi a pandemia...";
+    textoResultado.textContent=historiaFinal;
+     caixaAlternativas.textContent"";}
 mostraPergunta();
