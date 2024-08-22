@@ -62,7 +62,7 @@ function mostraPergunta(){
     perguntaAtual = perguntas[atual];
     caixaPerguntas.textContent = perguntas[atual].enunciado;
     caixaAlternativas.textContent = "";
-    yextoResultado.textContent="";
+    textoResultado.textContent="";
     mostraAlternativas();
 }
 
