@@ -52,38 +52,40 @@ const perguntas = [
 
 let atual = 0;
 let perguntaAtual;
-let historiaFinal="";
+let historiaFinal = "";
 
 function mostraPergunta(){
-    if(atual>=perguntas.length){
+    if(atual >= perguntas.length){
         mostraResultado();
-        return
+        return;
     }
     perguntaAtual = perguntas[atual];
-    caixaPerguntas.textContent = perguntas[atual].enunciado;
+    caixaPerguntas.textContent = perguntaAtual.enunciado;
     caixaAlternativas.textContent = "";
-    textoResultado.textContent="";
+    textoResultado.textContent = "";
     mostraAlternativas();
 }
 
 function mostraAlternativas(){
-    for (const alternativa of perguntaAtual.alternativas){
+    for(const alternativa of perguntaAtual.alternativas){
         const botaoAlternativas = document.createElement("button");
         botaoAlternativas.textContent = alternativa.texto;
-        botaoAlternativas.addEventListener("click", ()=> respostaSelecionada(alternativa));
-        caixaAlternativas.appendChild(botaoAlternativas);
+        botaoAlternativas.addEventListener("click", () => respostaSelecionada(alternativa));
+        caixaAlternativas.appendChild(botaoAlternativas)
     }
 }
 
-function respostaSelecionada (opcaoSelecionada){
-    const afirmacao=opcaoSelecionada.afirmacao;
-    historiaFinal=afirmacao;
-    historiaFinal+=afirmacao+"";
+function respostaSelecionada(opcaoSelecionada){
+    const afirmacao = opcaoSelecionada.afirmacao;
+    historiaFinal += afirmacao + " ";
     atual++;
     mostraPergunta();
 }
+
 function mostraResultado(){
-    caixaPerguntas.textContent=" Como foi a pandemia...";
-    textoResultado.textContent=historiaFinal;
-     caixaAlternativas.textContent"";}
-mostraPergunta();
+    caixaPerguntas.textContent = "Suas ações mudam o mundo...";
+    textoResultado.textContent = historiaFinal;
+    caixaAlternativas.textContent  = "";
+}
+
+mostraPergunta(); 
